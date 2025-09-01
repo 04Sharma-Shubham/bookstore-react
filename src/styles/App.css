@@ -1,0 +1,52 @@
+/* Global styles */
+body, html, #root, .app-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-container > main {
+  flex-grow: 1;
+  padding: 20px 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cf711f;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .app-container > main {
+    padding: 15px 10px;
+  }
+}
